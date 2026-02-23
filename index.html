@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>网页转软件一键生成器</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>网页转软件一键生成器</h1>
+    <p class="subtitle">输入网址、包名并选择图标，自动生成可直接导入 Android Studio 的 WebView 应用工程。</p>
+
+    <section class="card">
+      <label>
+        应用名称
+        <input id="appName" type="text" placeholder="例如：我的网站" value="我的网站" />
+      </label>
+
+      <label>
+        网页网址
+        <input id="webUrl" type="url" placeholder="https://example.com" value="https://example.com" />
+      </label>
+
+      <label>
+        包名
+        <input id="packageName" type="text" placeholder="com.example.webapp" value="com.example.webapp" />
+      </label>
+
+      <label>
+        选择图标（PNG/JPG）
+        <input id="iconFile" type="file" accept="image/png,image/jpeg,image/webp" />
+      </label>
+
+      <button id="generateBtn">一键生成 Android 应用工程 ZIP</button>
+      <p id="status"></p>
+    </section>
+
+    <section class="card tips">
+      <h2>已内置功能（按你的需求）</h2>
+      <ul>
+        <li>顶部加载进度条（网页加载过程可视化）。</li>
+        <li>默认跟随系统网络栈，可走本机 VPN/代理。</li>
+        <li>自动记忆上次关闭时的页面，下次打开继续上次浏览位置。</li>
+        <li>WebView 优化：DOM 存储、缓存、回退逻辑、错误提示和下拉刷新。</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
