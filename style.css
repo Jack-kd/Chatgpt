@@ -1,0 +1,77 @@
+:root {
+  color-scheme: light dark;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(140deg, #101424, #1b2749);
+  min-height: 100vh;
+  color: #f8f9ff;
+}
+
+.container {
+  max-width: 840px;
+  margin: 2rem auto;
+  padding: 0 1rem 2rem;
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  opacity: 0.9;
+  margin-top: 0;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.9rem;
+  font-weight: 600;
+}
+
+input,
+button {
+  width: 100%;
+  margin-top: 0.4rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.95);
+  color: #151515;
+}
+
+button {
+  background: #4f8cff;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3b78eb;
+}
+
+#status {
+  min-height: 1.5rem;
+  margin: 0.8rem 0 0;
+  font-size: 0.95rem;
+}
+
+ul {
+  margin: 0.4rem 0;
+}
